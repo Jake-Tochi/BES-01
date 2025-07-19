@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ビジネス イングリッシュ サポート</title>
+    
+    <!-- OGP設定 -->
+    <meta property="og:title" content="ビジネス イングリッシュ サポート | 外国のお客様おもてなしサポート">
+    <meta property="og:description" content="英語が苦手な方の「最初の味方」です。現場で本当に使える英語を、一緒に身につけていきます。30歳から始めた代表だからこそ、英語が得意でない方の気持ちがわかります。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="tochi.png">
+    <meta property="og:site_name" content="ビジネス イングリッシュ サポート">
+    <meta property="og:locale" content="ja_JP">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ビジネス イングリッシュ サポート | 外国のお客様おもてなしサポート">
+    <meta name="twitter:description" content="英語が苦手な方の「最初の味方」です。現場で本当に使える英語を、一緒に身につけていきます。">
+    <meta name="twitter:image" content="tochi.png">
+    
+    <!-- その他のメタタグ -->
+    <meta name="description" content="英語が苦手な方向けのビジネス英語サポートサービス。外国人のお客様対応、海外展開をお考えの企業様へ、現場で本当に使える英語を一緒に身につけるサポートを提供します。">
+    <meta name="keywords" content="ビジネス英語,英語サポート,外国人接客,英語研修,企業研修,海外展開,英語が苦手,おもてなし英語">
+    <meta name="author" content="株式会社ウェルネシー">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        // Hero title animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const titleElement = document.getElementById('hero-title');
+            if (titleElement) {
+                const titleSpans = titleElement.querySelectorAll('span');
+                titleSpans.forEach((span, spanIndex) => {
+                    const text = span.textContent;
+                    const isBlue = span.classList.contains('blue-text');
+                    span.innerHTML = '';
+                    
+                    for (let i = 0; i < text.length; i++) {
+                        const letter = document.createElement('span');
+                        letter.textContent = text[i];
+                        letter.className = isBlue ? 'hero-title-letter blue-text' : 'hero-title-letter';
+                        letter.style.animationDelay = `${spanIndex * 0.1 + i * 0.03}s`;
+                        span.appendChild(letter);
+                    }
+                });
+            }
+        });
+    </script>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">ビジネス イングリッシュ サポート</div>
+                <nav class="header-nav">
+                    <a href="#service">サービス概要</a>
+                    <a href="#target">対象のお客様</a>
+                    <a href="#greeting">代表者あいさつ</a>
+                    <a href="#plan">プラン紹介</a>
+                    <a href="#strength">サービスの強み</a>
+                    <a href="#voice">お客様の声</a>
+                </nav>
+                <a href="#contact" class="btn primary">無料ヒアリングを<br>申し込む</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="hero-title">
+                    <span class="title-main blue-text">外国のお客様おもてなしサポート</span>
+                    <span class="title-main">私たちは、英語が不安な方の</span>
+                    <span class="title-main">"最初の味方"です</span>
+                </h1>
+                <p class="hero-description">
+                    外国人のお客様対応、何から始めればいいか分からない。<br>
+                    市販のテキストではうまくいかない<br>
+                    ——そんな現場の声に応えるサポートです。
+                </p>
+                <div class="hero-buttons">
+                    <div class="hero-btn-container">
+                        <a href="#contact" class="btn secondary large">無料ヒアリングを申し込む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service section" id="service">
+        <div class="container">
+            <div class="section-header">
+                <h2>サービス概要</h2>
+            </div>
+            <div class="service-content">
+                <div class="service-grid">
+                    <div class="service-card service-purpose">
+                        <div class="service-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Head -->
+                                <circle cx="12" cy="8" r="3" fill="#ff6b35"/>
+                                <!-- Body -->
+                                <path d="M12 12c-2.5 0-4.5 2-4.5 4.5V20c0 .55.45 1 1 1h7c.55 0 1-.45 1-1v-3.5c0-2.5-2-4.5-4.5-4.5z" fill="#ff6b35"/>
+                                <!-- Question mark above head -->
+                                <circle cx="12" cy="3" r="2" fill="#ffffff" stroke="#333" stroke-width="1"/>
+                                <path d="M12 1.5c-1 0-1.5.5-1.5 1.5s.5 1.5 1.5 1.5 1.5-.5 1.5-1.5-.5-1.5-1.5-1.5zm0 3c-.3 0-.5-.2-.5-.5s.2-.5.5-.5.5.2.5.5-.2.5-.5.5z" fill="#333"/>
+                                <path d="M12 2c-.5 0-1 .3-1 .8 0 .3.2.5.5.6v.1c0 .3.2.5.5.5s.5-.2.5-.5v-.1c.3-.1.5-.3.5-.6 0-.5-.5-.8-1-.8z" fill="#333"/>
+                                <!-- Worry clouds -->
+                                <ellipse cx="8" cy="4" rx="2" ry="1" fill="#bdbdbd" opacity="0.7"/>
+                                <ellipse cx="16" cy="5" rx="1.5" ry="0.8" fill="#bdbdbd" opacity="0.6"/>
+                                <ellipse cx="6" cy="6" rx="1" ry="0.5" fill="#bdbdbd" opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <h3>お悩みの例</h3>
+                        <ul class="service-list">
+                            <li>外国人のお客様が増えてきたけれど、どう接客すればいいのか分からない</li>
+                            <li>ビジネスを大きくするために初めて海外展開をしたい</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card service-approach">
+                        <div class="service-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Head -->
+                                <circle cx="12" cy="6" r="3" fill="#1976d2"/>
+                                <!-- Body -->
+                                <path d="M12 10c-2.5 0-4.5 2-4.5 4.5V18c0 .55.45 1 1 1h7c.55 0 1-.45 1-1v-3.5c0-2.5-2-4.5-4.5-4.5z" fill="#1976d2"/>
+                                <!-- Arrow pointing forward -->
+                                <path d="M16 12l3 3-3 3v-2h-4v-2h4v-2z" fill="#1976d2" opacity="0.8"/>
+                                <!-- Steps/ladder -->
+                                <rect x="3" y="16" width="5" height="1" fill="#1976d2" opacity="0.6"/>
+                                <rect x="3" y="18" width="4" height="1" fill="#1976d2" opacity="0.5"/>
+                                <rect x="3" y="20" width="3" height="1" fill="#1976d2" opacity="0.4"/>
+                            </svg>
+                        </div>
+                        <h3>アプローチ</h3>
+                        <p>店舗、企業の現場に寄り添い、シンプルで実践的な対応を一緒に考えます。</p>
+                        <div class="highlight-box blue-background">
+                            <strong>「ゼロから始める人」を前提にしたサポート</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card service-strength">
+                        <div class="service-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Head -->
+                                <circle cx="12" cy="6" r="3" fill="#ffd700"/>
+                                <!-- Body -->
+                                <path d="M12 10c-2.5 0-4.5 2-4.5 4.5V18c0 .55.45 1 1 1h7c.55 0 1-.45 1-1v-3.5c0-2.5-2-4.5-4.5-4.5z" fill="#ffd700"/>
+                                <!-- Heart on chest -->
+                                <path d="M12 13c-1.5-1.5-4-1.5-4 1 0 1.5 4 4 4 4s4-2.5 4-4c0-2.5-2.5-2.5-4-1z" fill="#e91e63"/>
+                                <!-- Arms reaching out -->
+                                <ellipse cx="6" cy="13" rx="1" ry="2" fill="#ffd700" opacity="0.8"/>
+                                <ellipse cx="18" cy="13" rx="1" ry="2" fill="#ffd700" opacity="0.8"/>
+                                <!-- Gentle glow -->
+                                <circle cx="12" cy="12" r="8" fill="none" stroke="#ffd700" stroke-width="0.5" opacity="0.3"/>
+                            </svg>
+                        </div>
+                        <h3>私たちの強み</h3>
+                        <p class="strength-main"><strong>「英語が得意ではない方」<br>に寄り添えること</strong></p>
+                        <p>私自身が30歳を超えてからゼロから英語を学び、実践の中で使える力を身につけてきたからこそ、「うまくいかない理由」も、「つまずきやすいポイント」も、よく分かります。</p>
+                    </div>
+                    
+                    <div class="service-card service-solution">
+                        <div class="service-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Head -->
+                                <circle cx="12" cy="8" r="3" fill="#1976d2"/>
+                                <!-- Body -->
+                                <path d="M12 12c-2.5 0-4.5 2-4.5 4.5V20c0 .55.45 1 1 1h7c.55 0 1-.45 1-1v-3.5c0-2.5-2-4.5-4.5-4.5z" fill="#1976d2"/>
+                                <!-- Light bulb above head -->
+                                <circle cx="12" cy="3" r="2.5" fill="#ffd700" stroke="#333" stroke-width="1"/>
+                                <path d="M12 1.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5 1.5-.7 1.5-1.5-.7-1.5-1.5-1.5z" fill="#fff" opacity="0.3"/>
+                                <rect x="11.5" y="5.5" width="1" height="1" fill="#333"/>
+                                <rect x="11" y="6.5" width="2" height="0.5" fill="#333" rx="0.25"/>
+                                <!-- Light rays -->
+                                <path d="M12 0.5v1.5M8.5 1.5l1 1M15.5 1.5l-1 1M6.5 3l1.5 1.5M17.5 3l-1.5 1.5" stroke="#ffd700" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>ソリューション</h3>
+                        <div class="solution-content">
+                            <p class="solution-quote">あなたの仕事や現場に合った<strong>「あなたが本当に使える英語」</strong>を。</p>
+                            <div class="transformation-box vertical">
+                                <div class="from">できるか不安</div>
+                                <div class="arrow vertical">→</div>
+                                <div class="to">これならできるかも</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card service-native">
+                        <div class="service-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Main figure -->
+                                <circle cx="12" cy="6" r="3" fill="#4caf50"/>
+                                <path d="M12 10c-2.5 0-4.5 2-4.5 4.5V18c0 .55.45 1 1 1h7c.55 0 1-.45 1-1v-3.5c0-2.5-2-4.5-4.5-4.5z" fill="#4caf50"/>
+                                <!-- Support figures on sides -->
+                                <circle cx="5" cy="8" r="2" fill="#4caf50" opacity="0.7"/>
+                                <path d="M5 11c-1.5 0-2.5 1-2.5 2.5V16c0 .3.2.5.5.5h4c.3 0 .5-.2.5-.5v-2.5c0-1.5-1-2.5-2.5-2.5z" fill="#4caf50" opacity="0.7"/>
+                                <circle cx="19" cy="8" r="2" fill="#4caf50" opacity="0.7"/>
+                                <path d="M19 11c-1.5 0-2.5 1-2.5 2.5V16c0 .3.2.5.5.5h4c.3 0 .5-.2.5-.5v-2.5c0-1.5-1-2.5-2.5-2.5z" fill="#4caf50" opacity="0.7"/>
+                                <!-- Connection lines -->
+                                <path d="M7 12h3M14 12h3" stroke="#4caf50" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+                            </svg>
+                        </div>
+                        <h3>ネイティブスタッフ<br>サポート</h3>
+                        <p>必要に応じてアメリカ・イギリス英語のネイティブスタッフが「言語」だけでなく、文化や商習慣の違いを踏まえた「伝わる」発信と対応の仕方をご提案します。</p>
+                    </div>
+                    
+                    <div class="service-card service-message">
+                        <div class="service-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Main figure -->
+                                <circle cx="12" cy="8" r="3" fill="#ff6b35"/>
+                                <path d="M12 12c-2.5 0-4.5 2-4.5 4.5V20c0 .55.45 1 1 1h7c.55 0 1-.45 1-1v-3.5c0-2.5-2-4.5-4.5-4.5z" fill="#ff6b35"/>
+                                <!-- Open mouth -->
+                                <ellipse cx="12" cy="8.5" rx="0.8" ry="0.5" fill="#333"/>
+                                <!-- Sound waves emanating from mouth -->
+                                <path d="M15 8c1 0 2 .5 2 1.5s-1 1.5-2 1.5" stroke="#1976d2" stroke-width="2" fill="none" opacity="0.8"/>
+                                <path d="M16 7c1.5 0 3 1 3 2.5s-1.5 2.5-3 2.5" stroke="#1976d2" stroke-width="2" fill="none" opacity="0.6"/>
+                                <path d="M17 6c2 0 4 1.5 4 3.5s-2 3.5-4 3.5" stroke="#1976d2" stroke-width="2" fill="none" opacity="0.4"/>
+                                <!-- Heart on chest -->
+                                <path d="M12 15c-1-1-2.5-1-2.5.5s2.5 2.5 2.5 2.5 2.5-1 2.5-2.5-1.5-1.5-2.5-.5z" fill="#e91e63"/>
+                            </svg>
+                        </div>
+                        <h3>伝えたいこと</h3>
+                        <div class="final-message">
+                            <p><strong>英語が苦手でも大丈夫。</strong></p>
+                            <p>現場のリアルに即した、あなただけの英語サポート。それが、私たちの強みです。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="target section" id="target">
+        <div class="container">
+            <div class="section-header">
+                <h2>対象となるお客様</h2>
+            </div>
+            <div class="target-content">
+                <div class="target-hero">
+                    <h3>もしかして、あなたも同じ悩みを抱えていませんか？</h3>
+                    <p class="target-hero-subtitle">実は、多くの経営者・店舗責任者が同じ問題で困っています...</p>
+                </div>
+                
+                <div class="worry-scenarios">
+                    <div class="worry-scenario worry-scenario-1">
+                        <div class="scenario-header">
+                            <div class="scenario-number">01</div>
+                            <div class="scenario-title">
+                                <h4>「あ、外国人のお客様が来た...」</h4>
+                                <p class="scenario-emotion">心の声：「どうしよう...」</p>
+                            </div>
+                        </div>
+                        <div class="scenario-content">
+                            <div class="scenario-visual">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Foreign customer -->
+                                    <circle cx="8" cy="6" r="3" fill="#ff6b35"/>
+                                    <path d="M8 10c-2.5 0-4.5 2-4.5 4.5V18c0 .55.45 1 1 1h7c.55 0 1-.45 1-1v-3.5c0-2.5-2-4.5-4.5-4.5z" fill="#ff6b35"/>
+                                    <!-- Speech bubble -->
+                                    <ellipse cx="12" cy="4" rx="4" ry="2" fill="#ffffff" stroke="#333" stroke-width="1"/>
+                                    <path d="M8 6l1-1" stroke="#333" stroke-width="1"/>
+                                    <text x="12" y="4.5" font-family="Arial" font-size="2" text-anchor="middle" fill="#333">Hello!</text>
+                                    <!-- Confused staff -->
+                                    <circle cx="18" cy="6" r="3" fill="#1976d2"/>
+                                    <path d="M18 10c-2.5 0-4.5 2-4.5 4.5V18c0 .55.45 1 1 1h7c.55 0 1-.45 1-1v-3.5c0-2.5-2-4.5-4.5-4.5z" fill="#1976d2"/>
+                                    <!-- Sweat drops -->
+                                    <circle cx="20" cy="3" r="0.5" fill="#42a5f5"/>
+                                    <circle cx="21" cy="4" r="0.3" fill="#42a5f5"/>
+                                    <circle cx="19" cy="4" r="0.3" fill="#42a5f5"/>
+                                </svg>
+                            </div>
+                            <div class="scenario-text">
+                                <p><strong>最近、外国人のお客様が増えてきたけれど...</strong></p>
+                                <ul class="scenario-details">
+                                    <li>「何て言っているか分からない」</li>
+                                    <li>「どう説明すればいいか分からない」</li>
+                                    <li>「お客様を困らせてしまった」</li>
+                                    <li>「売上を逃してしまった」</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="worry-scenario worry-scenario-2">
+                        <div class="scenario-header">
+                            <div class="scenario-number">02</div>
+                            <div class="scenario-title">
+                                <h4>「スタッフが英語を避けてしまう」</h4>
+                                <p class="scenario-emotion">心の声：「チーム全体の問題だ...」</p>
+                            </div>
+                        </div>
+                        <div class="scenario-content">
+                            <div class="scenario-visual">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Multiple worried staff -->
+                                    <circle cx="6" cy="6" r="2.5" fill="#1976d2"/>
+                                    <path d="M6 9.5c-2 0-3.5 1.5-3.5 3.5v2.5c0 .3.2.5.5.5h6c.3 0 .5-.2.5-.5v-2.5c0-2-1.5-3.5-3.5-3.5z" fill="#1976d2"/>
+                                    <circle cx="12" cy="6" r="2.5" fill="#1976d2"/>
+                                    <path d="M12 9.5c-2 0-3.5 1.5-3.5 3.5v2.5c0 .3.2.5.5.5h6c.3 0 .5-.2.5-.5v-2.5c0-2-1.5-3.5-3.5-3.5z" fill="#1976d2"/>
+                                    <circle cx="18" cy="6" r="2.5" fill="#1976d2"/>
+                                    <path d="M18 9.5c-2 0-3.5 1.5-3.5 3.5v2.5c0 .3.2.5.5.5h6c.3 0 .5-.2.5-.5v-2.5c0-2-1.5-3.5-3.5-3.5z" fill="#1976d2"/>
+                                    <!-- Worry clouds -->
+                                    <ellipse cx="6" cy="3" rx="1.5" ry="0.8" fill="#ff6b35" opacity="0.7"/>
+                                    <ellipse cx="12" cy="3" rx="1.5" ry="0.8" fill="#ff6b35" opacity="0.7"/>
+                                    <ellipse cx="18" cy="3" rx="1.5" ry="0.8" fill="#ff6b35" opacity="0.7"/>
+                                </svg>
+                            </div>
+                            <div class="scenario-text">
+                                <p><strong>スタッフが英語対応に不安を感じて...</strong></p>
+                                <ul class="scenario-details">
+                                    <li>「誰も率先して対応しない」</li>
+                                    <li>「お客様を待たせてしまう」</li>
+                                    <li>「職場の雰囲気が悪くなる」</li>
+                                    <li>「機会損失が続いている」</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="worry-scenario worry-scenario-3">
+                        <div class="scenario-header">
+                            <div class="scenario-number">03</div>
+                            <div class="scenario-title">
+                                <h4>「海外展開したいけど、どこから始めれば...」</h4>
+                                <p class="scenario-emotion">心の声：「英語が壁になっている...」</p>
+                            </div>
+                        </div>
+                        <div class="scenario-content">
+                            <div class="scenario-visual">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Building -->
+                                    <rect x="8" y="10" width="8" height="8" fill="#1976d2"/>
+                                    <rect x="9" y="12" width="1" height="1" fill="#ffffff"/>
+                                    <rect x="11" y="12" width="1" height="1" fill="#ffffff"/>
+                                    <rect x="13" y="12" width="1" height="1" fill="#ffffff"/>
+                                    <rect x="15" y="12" width="1" height="1" fill="#ffffff"/>
+                                    <rect x="9" y="14" width="1" height="1" fill="#ffffff"/>
+                                    <rect x="11" y="14" width="1" height="1" fill="#ffffff"/>
+                                    <rect x="13" y="14" width="1" height="1" fill="#ffffff"/>
+                                    <rect x="15" y="14" width="1" height="1" fill="#ffffff"/>
+                                    <!-- Globe with question mark -->
+                                    <circle cx="12" cy="5" r="3" fill="#4caf50" opacity="0.8"/>
+                                    <path d="M10 5c0-1 1-2 2-2s2 1 2 2M12 3v4M9 5h6" stroke="#ffffff" stroke-width="1"/>
+                                    <!-- Barrier wall -->
+                                    <rect x="2" y="8" width="2" height="8" fill="#ff6b35"/>
+                                    <rect x="20" y="8" width="2" height="8" fill="#ff6b35"/>
+                                    <text x="3" y="12" font-family="Arial" font-size="2" text-anchor="middle" fill="#ffffff">?</text>
+                                    <text x="21" y="12" font-family="Arial" font-size="2" text-anchor="middle" fill="#ffffff">?</text>
+                                </svg>
+                            </div>
+                            <div class="scenario-text">
+                                <p><strong>ビジネスを拡大したいけど...</strong></p>
+                                <ul class="scenario-details">
+                                    <li>「英語でのやり取りが不安」</li>
+                                    <li>「文化の違いが分からない」</li>
+                                    <li>「どこから手をつければいいか分からない」</li>
+                                    <li>「失敗のリスクが怖い」</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="target-cta" style="background: linear-gradient(135deg, #fff3e0 0%, #ffecb3 100%); border: 2px solid #ff9800; color: #bf360c;">
+                    <div class="cta-message">
+                        <h3 style="color: #e65100;">もしこの中で1つでも<br>「あ、これ自分のことだ」と思ったなら...</h3>
+                        <p class="cta-subtitle" style="color: #bf360c;">その悩み、あなたの会社だけではありません。<br>同じ悩みを抱えた多くの方が、私たちのサポートで問題を解決しています。</p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn primary large pulse">まずは無料相談してみる</a>
+                            <p class="cta-note" style="color: #bf360c;">話してみると気づくこともあるかもしれません。<br>お気軽にご相談ください。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="greeting section" id="greeting">
+        <div class="container">
+            <div class="section-header">
+                <h2>代表ご挨拶</h2>
+            </div>
+            
+            <!-- メイン写真と引用メッセージ -->
+            <div class="greeting-hero-layout">
+                <div class="greeting-photo-left">
+                    <img src="tochi.png" alt="代表取締役社長 栃本 元基" class="main-hero-image">
+                </div>
+                <div class="greeting-quote-right">
+                    <h3 class="greeting-quote">英語が苦手でも、<br>現場で使える英語は必ず身につきます</h3>
+                </div>
+            </div>
+            
+            <!-- メッセージ本文 -->
+            <div class="greeting-message-section">
+                <div class="greeting-message-content">
+                    <p>「英語は15歳までに始めないと身につかない」とか、「留学経験がないと話せるようにならない」——そんな話、聞いたことはありませんか？ 私はそれを聞いて、「もう手遅れかもしれない」「自分には無理だ」と思ったことがあります。</p>
+                    
+                    <p>私が英語を本格的に学び始めたのは30歳を過ぎてから、きっかけは（恥ずかしい話ですが）「英語の飲み会がつらすぎたから」でした。</p>
+                    
+                    <p>当時の私は英語がまったく話せなかったのですが、帰国子女の妻と友人たちの飲み会がしばしば開催されていたのです。このような英語の飲み会が予定されると何日も前から緊張で眠れず、当日はトイレに何度も逃げ込んでは「早く終わってくれ〜」と願うばかり。もちろん、友達と会えるのは嬉しいんですよ。でも、英語が話せない自分に対して、情けなさや悔しさ、居場所のなさを強く感じていたのです。「仕事で英語が必要だから」なんて立派な理由じゃありません。ただ、「苦痛な時間をなんとかしたい」という一心で、英語の勉強を始めました。</p>
+                    
+                    <p>最初は教材を買って、ネイティブレベルの妻に教えてもらおうとしましたが、英語が自然に身についてきた人には、私のような"ゼロから始める人"のつまずきや悩みが分からない。「こりゃダメだ」と思って英会話スクールにも通いましたが、会社員には高額なうえ、毎週決まった時間に通うのも難しい…。結局、教材のレベルが合っているのかも分からず、遠回りばかり。無駄なお金と時間をたくさんかけてしまいました。</p>
+                    
+                    <p>でも、そんな私でも——今では外国人のお客様を相手に英語で仕事をし、旅行会社を運営するまでになりました。</p>
+                    
+                    <p>なぜそれが可能だったのか？ それは、「英語が得意じゃない人には、そういう人のためのやり方がある」と気づいたからです。</p>
+                    
+                    <p>もちろん、ネイティブのように流暢に話せたら便利かもしれません。でも実際には、多くの現場でそこまでの英語力は求められていません。</p>
+                    
+                    <p class="key-message">本当に必要なのは、「あなたの職場で、本当に使える英語」を身につけること。</p>
+                    
+                    <p>私はそこに気づき、実践を通じて英語力を伸ばしてきました。そして今、同じように「英語に苦手意識がある」「でも対応しないといけない」——そんなあなたの力になりたいと考えています。</p>
+                    
+                    <p>私のサービスでは、英語が得意でない人でも「安心して使える」「怖くない」「実際に役立つ」英語を、一緒に身につけていきます。</p>
+                    
+                    <p>さらに私の後ろには、アメリカ・イギリス出身のネイティブスピーカーたち（ときには妻も）が、あなたをしっかりサポートできるよう待機しています。</p>
+                    
+                    <p class="closing-message">思い立った今が、始め時。</p>
+                    
+                    <p>「あなたに必要な英語」を、一緒に見つけましょう。</p>
+                </div>
+                
+                <!-- 署名セクション -->
+                <div class="greeting-signature">
+                    <div class="signature-info">
+                        <p class="signature-title">株式会社ウェルネシー<br>代表取締役社長<br></p>
+                        <p class="signature-name">栃本元基</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="plan section" id="plan">
+        <div class="container">
+            <div class="section-header">
+                <h2>プラン紹介</h2>
+                <p class="section-subtitle">あなたのニーズに合わせた3つのプラン</p>
+            </div>
+            <div class="plan-cards">
+                <div class="price-card">
+                    <h3>プレミアムプラン</h3>
+                    <div class="price">38.5万円<span>（35万円+税）～ 応相談</span></div>
+                    <p class="plan-subtitle">英語導入に関するフルパッケージプラン</p>
+                    <p class="plan-description">複数店舗・部門への対応や継続的な指導まで含めた総合支援プランです。<br>
+                    現場調査・カスタムテキスト・指導・実践練習・経営層向けの改善提案まで、英語対応の仕組みづくりをトータルでサポートします。（カスタマイズ可）</p>
+                    <ul class="plan-features">
+                        <li>初回ヒアリング（経営者・責任者向け）</li>
+                        <li>店舗または部署の訪問調査（2回）</li>
+                        <li>貴社専用テキストの制作（現場用・マネジメント用）</li>
+                        <li>接客ロールプレイ＋実地指導（2回）</li>
+                        <li>1ヶ月間のオンライン英語サポート（延長割引あり）</li>
+                        <li>スタッフの対応品質チェック（覆面調査またはフォロー訪問）</li>
+                        <li>経営層向けレポートと改善提案書の提出</li>
+                    </ul>
+                </div>
+                
+                <div class="price-card">
+                    <h3>スタンダードプラン</h3>
+                    <div class="price">22万円<span>（20万円+税）</span></div>
+                    <p class="plan-subtitle">英語対応の土台をつくる、現場実践プラン</p>
+                    <p class="plan-description">ヒアリング・テキスト作成・指導・オンラインサポートまでをワンパッケージに。<br>
+                    現場の状況に合わせて「まず何を整えればいいか」「どう伝えればいいか」を明確にし、実際の接客や対応で使える英語環境の土台をしっかり整えます。</p>
+                    <ul class="plan-features">
+                        <li>初回ヒアリング（経営者・責任者向け）</li>
+                        <li>店舗または部署の訪問調査（1回）</li>
+                        <li>貴社専用テキストの制作（現場用）</li>
+                        <li>接客ロールプレイ＋実地指導（1回）</li>
+                        <li>1ヶ月間のオンライン英語サポート（延長割引あり）</li>
+                    </ul>
+                </div>
+                
+                <div class="price-card">
+                    <h3>ライトプラン</h3>
+                    <div class="price">5.5万円<span>（5万円+税）</span></div>
+                    <p class="plan-subtitle">まずは始めてみたい方向けの、スモールスタートプラン</p>
+                    <p class="plan-description">現場の課題を一緒に整理し、「自分たちに必要な英語とは何か」を見つける第一歩をサポートします。</p>
+                    <ul class="plan-features">
+                        <li>初回ヒアリング（経営者・責任者向け）</li>
+                        <li>1ヶ月間のオンライン英語サポート</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="strength section" id="strength">
+        <div class="container">
+            <div class="section-header">
+                <h2>このサービスの強み</h2>
+                <p class="section-subtitle">なぜ多くの企業様に選ばれるのか</p>
+            </div>
+            <div class="strength-content">
+                <div class="strength-grid">
+                    <div class="strength-item">
+                        <h3 class="strength-title">英語が苦手な人に特化した、実践的なサポート</h3>
+                        <p class="strength-description">「英語を話すのが怖い」「中学英語すら覚えていない」——そんな方こそ、私たちのサポート対象です。ネイティブのように話せなくても、伝える力・伝わる工夫は身につけられます。現場の状況を踏まえ、同じ目線で、恥ずかしさや不安に寄り添いながら、無理なく実践できるステップをご提案します。</p>
+                    </div>
+                    
+                    <div class="strength-item">
+                        <h3 class="strength-title">「現場で本当に使える」英語表現を一緒に考える伴走型支援</h3>
+                        <p class="strength-description">よくあるフレーズ集やテンプレートを覚えても、実際の現場で使えなければ意味がありません。私たちは貴社の接客シーンやスタッフの言葉遣いに合わせて、ぴったりの英語表現を一緒に考えるスタイルです。すぐに現場で使える、でも無理のない、あなたのチームのためだけの英語を一緒につくっていきます。</p>
+                    </div>
+                    
+                    <div class="strength-item">
+                        <h3 class="strength-title">ネイティブスピーカーによる対応力アップのサポート体制</h3>
+                        <p class="strength-description">状況に応じて、アメリカやイギリス英語のネイティブスピーカーがサポートに入ります。発音や言い回しの確認、より自然な表現への調整、ロールプレイ練習など、現場での「伝わる」力を高めるサービスを提供します。ヒアリングをしている私自身が間に立って、貴社の状況をしっかり橋渡ししますのでご安心ください。</p>
+                    </div>
+                    
+                    <div class="strength-item">
+                        <h3 class="strength-title">貴社専用の英語対応マニュアルを作成</h3>
+                        <p class="strength-description">業種やサービス内容、客層に合わせて、貴社専用の英語接客マニュアルを作成いたします。貴社の現場で頻出する表現を、使いやすいフレーズに落とし込みます。スタッフが少しづつでも英語対応できるようになることで、接客の質と安心感がアップします。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="voice section" id="voice">
+        <div class="container">
+            <div class="section-header">
+                <h2>お客様の声</h2>
+                <p class="section-subtitle">実際にサービスをご利用いただいたお客様より</p>
+            </div>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <h3>日本酒醸造会社様</h3>
+                    <p>外国からのお客様向けに酒蔵の見学ツアーを行う際、どのように案内すればよいか悩んでいました。英語の専門知識がなくても伝えられる表現を教えていただき、スタッフ全員が自信を持って案内できるようになりました。特に「英語に苦手意識がある人向けのサポート」という点が私たちにはとても合っていたと思います。</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>お申し込み・お問い合わせ</h2>
+            </div>
+            <div class="contact-content">
+                <p>まずはお気軽にご相談ください。<br>
+                <strong>無料のヒアリングを実施中です。</strong><br>
+                オンライン・対面ともに対応可能です。</p>
+                
+                <div class="contact-button">
+                    <a href="#" class="btn primary">無料相談を申し込む</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 株式会社ウェルネシー All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
