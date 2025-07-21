@@ -702,7 +702,15 @@ header {
 }
 
 .service-content p,
-.target-content p,
+.target-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .contact-content p {
     font-size: 18px;
     line-height: 1.7;
@@ -710,6 +718,8 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    color: var(--text-dark);
+    font-weight: 600;
 }
 
 .greeting-layout {
@@ -1297,10 +1307,27 @@ header {
     overflow: hidden;
 }
 
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 2;
+}
+
 .contact h2 {
-    color: var(--white);
+    color: var(--text-dark);
     font-size: 40px;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .contact .section-subtitle {
@@ -1313,11 +1340,82 @@ header {
     margin-top: 48px;
 }
 
+.contact-button .btn {
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 footer {
     background-color: var(--text-dark);
     color: var(--white);
     text-align: center;
     padding: 32px 0;
+}
+
+.company-info {
+    margin-bottom: 24px;
+}
+
+.company-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.company-label {
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 400;
+}
+
+.company-brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.company-logo {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+}
+
+.company-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.company-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.company-link {
+    color: #87ceeb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 16px;
+    border: 1px solid #87ceeb;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.company-link:hover {
+    background-color: #87ceeb;
+    color: var(--text-dark);
+}
+
+.copyright {
+    margin: 0;
+    font-size: 12px;
+    color: #ccc;
 }
 
 h2 {
