@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://business-english-support.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
