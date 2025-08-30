@@ -1564,14 +1564,22 @@ h2 {
 }
 
 @media (max-width: 980px) {
-    header .btn.primary {
-        white-space: nowrap !important;
-        overflow: hidden !important;
-        text-overflow: ellipsis !important;
+    header .btn.primary .desktop-text {
+        display: none !important;
     }
     
-    header .btn.primary br {
+    header .btn.primary .mobile-text {
+        display: inline !important;
+    }
+}
+
+@media (min-width: 981px) {
+    header .btn.primary .mobile-text {
         display: none !important;
+    }
+    
+    header .btn.primary .desktop-text {
+        display: inline !important;
     }
     
     .section-header {
