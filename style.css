@@ -1548,9 +1548,10 @@ h2 {
     }
     
     .header-content .btn.primary {
-        padding: 6px 12px;
-        font-size: 10px;
-        line-height: 1.2;
+        padding: 6px 12px !important;
+        font-size: 10px !important;
+        line-height: 1.2 !important;
+        white-space: nowrap !important;
     }
     
     .section-header {
