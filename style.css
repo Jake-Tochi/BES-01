@@ -1564,6 +1564,12 @@ h2 {
 }
 
 @media (max-width: 980px) {
+    header .btn.primary {
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+    
     header .btn.primary br {
         display: none !important;
     }
