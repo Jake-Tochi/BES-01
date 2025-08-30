@@ -1558,6 +1558,10 @@ h2 {
         width: auto !important;
     }
     
+    header .btn.primary br {
+        display: none !important;
+    }
+    
     .section-header {
         margin-bottom: 40px;
     }
