@@ -1561,6 +1561,12 @@ h2 {
     header .btn.primary br {
         display: none !important;
     }
+}
+
+@media (max-width: 980px) {
+    header .btn.primary br {
+        display: none !important;
+    }
     
     .section-header {
         margin-bottom: 40px;
