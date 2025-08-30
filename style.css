@@ -1547,7 +1547,7 @@ h2 {
         font-size: 14px;
     }
     
-    header .btn {
+    .header-content .btn.primary {
         padding: 6px 12px;
         font-size: 10px;
         line-height: 1.2;
